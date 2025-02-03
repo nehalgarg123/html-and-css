@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="social_media.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="container">
+        <span class="close-btn">
+            <i class='bx bx-x'></i>
+        </span>
+        <div class="media-icons">
+            <a href="#" style="background:#e60023;">
+                <i class='bx bxl-pinterest'></i>
+                <span class="tooltip" style="color:#e60023;">Pinterest</span>
+            </a>
+            <a href="#" style="background:#0e76a8;">
+                <i class='bx bxl-linkedin-square'></i>
+                <span class="tooltip" style="color:#e60023;">Linkedin</span>
+            </a>
+            <a href="#" style="background:#ff0000;">
+                <i class='bx bxl-youtube'></i>
+                <span class="tooltip" style="color:#e60023;">Youtube</span>
+            </a>
+            <a href="#" style="background:#ea4689;">
+                <i class='bx bxl-dribbble'></i>
+                <span class="tooltip" style="color:#e60023;">Dribbble</span>
+            </a>
+            <a href="#" style="background:#8e36ff;">
+                <i class='bx bxl-github'></i>
+                <span class="tooltip" style="color:#8e36ff;">Github</span>
+            </a>
+            <a href="#" style="background:#4267b2;">
+                <i class='bx bxl-facebook'></i>
+                <span class="tooltip" style="color:#4267b2;">Facebook</span>
+            </a>
+            <a href="#" style="background:#1da1f2;">
+                <i class='bx bxl-twitter'></i>
+                <span class="tooltip" style="color:#1da1f2;">Twitter</span>
+            </a>
+        </div>
+
+    </div>
+    <script>
+        const closeBtn = document.querySelector(".close-btn");
+        closeBtn.addEventListener("click", () => {
+            closeBtn.classList.toggle("open");
+        })
+    </script>
+</body>
+
+</html>

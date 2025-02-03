@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fae9fb;
+}
+
+.container {
+    max-width: 1050px;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    margin: 0 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+
+}
+
+.content .image-box {
+    max-width: 55%;
+}
+
+.content .image-box img {
+    width: 100%;
+}
+
+.content .topic {
+    font-size: 22px;
+    font: weight 500px;
+    color: #ba24c2;
+}
+
+.content form {
+    width: 40%;
+    margin-right: 30px;
+}
+
+.content .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+}
+
+.content .input-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 16px;
+    background: #fae9fb;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.content .input-box label {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #636c72;
+    transform: translateY(-50%);
+    font-size: 15px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.content .input-box input:focus~label,
+.content .input-box input:valid~label {
+    top: 0;
+    left: 12px;
+    display: 14px;
+    color: #ba24c2;
+    background: #fff;
+}
+
+.content .input-box input:focus {
+    background-color: #fff;
+    border-color: #ba24c2;
+}
+
+.content .message-box {
+    min-height: 100px;
+    position: relative;
+}
+
+.content .message-box textarea {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    background: #fae9fb;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.content .message-box label {
+    position: absolute;
+    font-size: 16px;
+    color: #636c72;
+    left: 18px;
+    top: 6px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.content .message-box textarea:focus~label {
+    left: 12px;
+    color: #ba24c2;
+    border-color: #ba24c2;
+    background: #fff;
+    top: -10px;
+    font-size: 14px;
+    background: #fff;
+
+}
+
+.content .message-box textarea:focus {
+    border-color: #ba24c2;
+    background-color: #fff;
+}
+
+.content .input-box input[type="submit"] {
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background: #ba24c2;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.content .input-box input[type="submit"]:hover {
+    background-color: #ba24c2;
+
+}
+
+@media (max-width:1000px) {
+    .content .image-box {
+        display: none;
+    }
+
+    .content form {
+        width: 100%;
+        margin-left: 30px;
+    }
+
+}
